@@ -168,12 +168,12 @@ This page is the documentation that goes along with my Arch Linux Install
 
 3. After configuring the terminal the next thing we need to do is mess with aliases
     - One alias we are going to add is going to be for clear we will add this line to the .bashrc file:
-        - **alias c='clear'
+        - **alias c='clear'**
     - Another one is going to be for **cd ..** which we will add these lines:
-        - **alias ..='cd ..'
-        - **alias ...='cd ../..'
-        - **alias .3='cd ../../..'
-        - **alias .4='cd ../../../..'
+        - **alias ..='cd ..'**
+        - **alias ...='cd ../..'**
+        - **alias .3='cd ../../..'**
+        - **alias .4='cd ../../../..'**
     - Next we will go ahead and add one to help with installing packages. We will do this for the **sudo pacman -S** command:
         - **alias inpac='sudo pacman -S'**
     - We will also do one for removing packages:
