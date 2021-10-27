@@ -152,7 +152,7 @@ This page is the documentation that goes along with my Arch Linux Install
 1. First thing that I am going to do is install a theme for the desktop. Im going to install the materia theme. I am also going to install this one program called i3lock. Basically with i3lock you can lock the pc and it go to a lock screen and then you just enter password and it will unlock. To do this I will use the following command:
     - **sudo pacman -S materia-gtk-theme i3lock**
     - Then I just have to go to settings and change to the materia theme
-    - For the i3lock I am going to setup a keyboard shortcut in the settings. I am going to have the command it run be:
+    - For the i3lock I am going to setup a keyboard shortcut in the settings and also an alias for terminal. I am going to have the command it run be:
         - **i3lock -i /home/ryan/Pictures/lockscreen.png**
     - This will show that lockscreen.png as the picture.
 
@@ -167,9 +167,23 @@ This page is the documentation that goes along with my Arch Linux Install
     - After running this our terminal should look different. From there we can go into the config files of the script and change up the way it looks.
 
 3. After configuring the terminal the next thing we need to do is mess with aliases
-
+    - One alias we are going to add is going to be for clear we will add this line to the .bashrc file:
+        - **alias c='clear'
+    - Another one is going to be for **cd ..** which we will add these lines:
+        - **alias ..='cd ..'
+        - **alias ...='cd ../..'
+        - **alias .3='cd ../../..'
+        - **alias .4='cd ../../../..'
+    - Next we will go ahead and add one to help with installing packages. We will do this for the **sudo pacman -S** command:
+        - **alias inpac='sudo pacman -S'**
+    - We will also do one for removing packages:
+        - **alias rmpac='sudo pacman -R'**
+       
 4. Finally the last thing to do is to install ssh and then also zsh as our other shell.
+    - For this we can do the following
+         - **inpac openssh zsh** or **sudo pacman -S openssh zsh** if no alias.
 
 ## Problems
 
-1. 
+1. One problem I encountered was properly setting up the partitions and also formatting them correctly. Had never done this before and wasn't exactly sure what to do. I looked around the wiki trying to figure out what exactly to do and I sort of figured it out. I finally understood what I needed to do but wasn't sure how to do it. I then had one of my classmates help steer me in the right direction to then use this command 'cfdisk /dev/sda' and after that I was able to get the partitioning done. Then I wasn't exactly sure how to format to the proper thing. This took some more looking at the wiki and then I found what formatting you use for each type of system and was able to format them from there.
+2. I also missed the mounting step at first and was wondering why my pacstrap command wasn't working but that was just me forgetting to set the mount point because I missed that step.
