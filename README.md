@@ -22,6 +22,7 @@ This page is the documentation that goes along with my Arch Linux Install
 ## File Partitioning
 
 1. After changing the file I booted up Arch. Once booted up I went ahead and setup the partitions using the command **cfdisk /dev/sda** which is a pseudo-graphic way of changing partitions.
+    - Wasn't sure at first how to partition drives then figured it out from a classmate and used the above command.
     - Added /dev/sda1 with 500M type EFI System
     - Added /dev/sda2 with 19.5G type Linux filesystem
 
@@ -36,7 +37,7 @@ This page is the documentation that goes along with my Arch Linux Install
 3. After formatting the partitions we then have to mount the partition. To mount the partition we will be using the command:
     - **mount /dev/sda2 /mnt**
         - This command instructs the operating system that a file system is ready to use, and associates it with a particular point in the overall file system.
-
+            - Do not forget miss this step like I did because if you do then you won't be able to run following commands for packages
 ## Basic Package Installation and Configuration
 
 1. Once the drives are all formatted and mounted we then need to install the essential packages using this command:
