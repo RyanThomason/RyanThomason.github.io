@@ -56,12 +56,11 @@
     >```docker-compose down --volumes``` (This command will remove everything including the WordPress database)
 
 ## Images of the application running
+![RunningInDocker](https://user-images.githubusercontent.com/73131611/142069413-2da66317-e44f-4371-989c-7f3e5fc1d071.png)
+![FirstLogin](https://user-images.githubusercontent.com/73131611/142069495-212f6251-25a8-46df-aaf0-ac9f8931c866.png)
+![AdminPanel](https://user-images.githubusercontent.com/73131611/142069598-2217cbec-08cf-4dc6-b40b-cdf0f579bbf7.png)
 
-![Running Image](./_images/RunningInDocker.png)
 
-![Initial Login](./_images/InitialLogin.png)
-
-![Admin Dashboard](./_images/AdminDashboard.png)
 
 ## Resources
 
