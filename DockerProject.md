@@ -57,7 +57,7 @@
 
 ## Images of the application running
 
-![Running Image](./_images/RunningInDocker.png)
+[Running Image](./_images/RunningInDocker.png)
 
 ![Initial Login](./_images/InitialLogin.png)
 
