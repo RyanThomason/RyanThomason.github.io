@@ -55,6 +55,39 @@
 
     >```docker-compose down --volumes``` (This command will remove everything including the WordPress database)
 
+## Docker Compose file
+```version: "3.9"
+    
+services:
+  db:
+    image: mysql:5.7
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: somewordpress
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
+    
+  wordpress:
+    depends_on:
+      - db
+    image: wordpress:latest
+    volumes:
+      - wordpress_data:/var/www/html
+    ports:
+      - "8000:80"
+    restart: always
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+      WORDPRESS_DB_NAME: wordpress
+volumes:
+  db_data: {}
+  wordpress_data: {}
+  ```
 ## Images of the application running
 ![RunningInDocker](https://user-images.githubusercontent.com/73131611/142069413-2da66317-e44f-4371-989c-7f3e5fc1d071.png)
 ![FirstLogin](https://user-images.githubusercontent.com/73131611/142069495-212f6251-25a8-46df-aaf0-ac9f8931c866.png)
