@@ -56,7 +56,8 @@
     >```docker-compose down --volumes``` (This command will remove everything including the WordPress database)
 
 ## Docker Compose file
-```version: "3.9"
+```
+version: "3.9"
     
 services:
   db:
