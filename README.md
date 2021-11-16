@@ -1,3 +1,8 @@
+---
+title: Arch Linux
+layout: page
+filename: README
+--- 
 # Setup of Arch Linux
 
 This page is the documentation that goes along with my Arch Linux Install
