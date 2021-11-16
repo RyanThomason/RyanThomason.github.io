@@ -2,5 +2,5 @@
 
 ## Projects
 
-1. [Arch Linux](RyanThomason.github.io/ArchLinux)
-2. [Docker Project](RyanThomason.github.io/DockerProject)
+1. [Arch Linux](/ArchLinux)
+2. [Docker Project](/DockerProject)
