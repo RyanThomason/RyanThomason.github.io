@@ -93,7 +93,8 @@
 
 ## Screenshots for using VPN on Phone
 ### Without VPN
-![PhoneWithoutVPN](https://user-images.githubusercontent.com/73131611/144691462-1c577403-d2dd-4730-a047-de92dcc04b74.jpg)
+![PhoneWithoutVPN_LI](https://user-images.githubusercontent.com/73131611/144691931-e4dd8e50-de33-4232-8862-4f593530cc31.jpg)
+
 ### Enabled VPN
 
 ![PhoneEnabledVPN](https://user-images.githubusercontent.com/73131611/144691712-a03b9b06-3e9c-4010-b84a-c65faf66d333.jpg)
